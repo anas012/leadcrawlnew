@@ -1,28 +1,36 @@
-
-
- .c-hide{
+.c-hide {
     display: none;
 }
-.c-show{
+
+.c-show {
     display: block;
 }
+
 .w3-bar {
     width: 100%;
     overflow: hidden;
-    background-color: black;color: white;
+    background-color: black;
+    color: white;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
+
 div {
     display: block;
 }
+
 .topnav a {
     padding: 10px 15px 9px 15px !important;
 }
+
 a.topnav-icons.fa-menu {
     font-size: 22px !important;
 }
+
 .topnav a.topnav-icons {
     background-color: white;
 }
@@ -33,7 +41,6 @@ a.topnav-icons.fa-menu {
     width: auto;
     border: none;
     display: block;
-
 }
 
 a.topnav-icons {
@@ -42,9 +49,11 @@ a.topnav-icons {
     padding-top: 11px !important;
     padding-bottom: 13px !important;
 }
+
 .w3-left {
     float: left!important;
 }
+
 .w3-button {
     border: none;
     display: inline-block;
@@ -58,6 +67,7 @@ a.topnav-icons {
     cursor: pointer;
     white-space: nowrap;
 }
+
 .w3-bar .w3-button {
     white-space: normal;
 }
@@ -75,13 +85,18 @@ a.topnav-icons {
 .fa-menu:before {
     content: '\f0c9';
 }
+
 .w3-right {
     float: right!important;
 }
+
+
 /* .w3-bar a.active {
     background-color: #04AA6D!important;
     color: #ffffff;
 } */
+
+
 /* .btn {
     border: none;
     outline: none;
@@ -90,22 +105,22 @@ a.topnav-icons {
     cursor: pointer;
     font-size: 18px;
   } */
- 
-  .active, .w3-btn:hover {
-    background-color: #666;
-    color: white;
+
+.active,
+.w3-btn:hover {
+    background-color: #f7f9fb;
+    color: #1991eb;
     text-decoration: none!important;
-  }
-@media (min-width: 480px)
-{
-    .w3-hide-large {
-    display: none!important;
-    }
 }
-@media (max-width: 479px)
-{
-    .w3-n {
-    display: none!important;
+
+@media (min-width: 480px) {
+    .w3-hide-large {
+        display: none!important;
     }
 }
 
+@media (max-width: 479px) {
+    .w3-n {
+        display: none!important;
+    }
+}
