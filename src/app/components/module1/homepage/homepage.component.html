@@ -1,28 +1,28 @@
 <div id="w3-bar" class="w3-bar w3-left align-items-center" style="width:100%;overflow:hidden;background-color: white; color: black;">
-  <a href="javascript:void(0);" class="w3-hide-large w3-left w3-bar-item w3-button px-2 py-3"><i class = "fa fa-bars"></i></a>
-  <!-- <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 px-1 pr-3 py-3 " ><i class="fa fa-cog "></i></a> -->
-  <!-- <a class="w3-left w3-bar-item w3-button" href="#" title="Home"><i class = "material-icons">feed</i></a> -->
-  <a href="javascript:void(0);" class="w3-left w3-n w3-bar-item w3-button px-2 py-3" >
-      <i class="fa fa-female px-2" ></i>
-  </a>
+    <a href="javascript:void(0);" class="w3-hide-large w3-left w3-bar-item w3-button px-2 py-3"><i class = "fa fa-bars"></i></a>
+    <!-- <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 px-1 pr-3 py-3 " ><i class="fa fa-cog "></i></a> -->
+    <!-- <a class="w3-left w3-bar-item w3-button" href="#" title="Home"><i class = "material-icons">feed</i></a> -->
+    <a href="javascript:void(0);" class="w3-left w3-n w3-bar-item w3-button px-2 py-3">
+        <i class="fa fa-female px-2"></i>
+    </a>
 
-  <a class="w3-bar-item w3-button w3-btn active px-2 py-3" href="#" onclick="showContent('home')" >
-      <i class="w3-n fa fa-home px-1"></i>Home</a>
-  <a class="w3-bar-item w3-n w3-button w3-btn px-2 py-3" href="#" onclick="showContent('search')">
-      <i class="fa fa-search px-1"></i>Search</a>
-  <a class="w3-bar-item w3-n w3-button w3-btn px-2 py-3" href="#" onclick="showContent('engage')" >
-      <i class="fa fa-paper-plane-o px-1"></i>Engage</a>
-  <a class="w3-bar-item w3-n w3-button w3-btn px-2 py-3" href="#" onclick="showContent('enrich')">
-      <i class=" fa fa-refresh px-1"></i>Enrich</a>
-  
-  <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 px-1 pr-3 py-3 " >Settings</a>
-  <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-bell"></i></a>
-  <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-question-circle-o"></i></a>
-  <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-phone"></i></a>
-  <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-search"></i></a>
-  <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1">
-      <span class="badge badge-pill badge-primary p-1 px-2">Upgrade</span></a>
-  
+    <a class="w3-bar-item w3-button w3-btn active px-2 py-3" href="#" (click)="showContent()">
+        <i class="w3-n fa fa-home px-1"></i>Home</a>
+    <a class="w3-bar-item w3-n w3-button w3-btn px-2 py-3" href="#" (click)="showContent()">
+        <i class="fa fa-search px-1"></i>Search</a>
+    <a class="w3-bar-item w3-n w3-button w3-btn px-2 py-3" href="#" (click)="showContent()">
+        <i class="fa fa-paper-plane-o px-1"></i>Engage</a>
+    <a class="w3-bar-item w3-n w3-button w3-btn px-2 py-3" href="#" (click)="showContent()">
+        <i class=" fa fa-refresh px-1"></i>Enrich</a>
+
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 px-1 pr-3 py-3 ">Settings</a>
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-bell"></i></a>
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-question-circle-o"></i></a>
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-phone"></i></a>
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-search"></i></a>
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1">
+        <span class="badge badge-pill badge-primary p-1 px-2">Upgrade</span></a>
+
 </div>
 <!--  <div class="" id="w3-content">
       <div id="home" class="c-show w3-c p-3" style="height: 50vh; width: 100%;background-color: #666;color: white;">
@@ -41,46 +41,46 @@
 
 <!-- </div> -->
 
-<div class="containerfluid"> 
-<router-outlet></router-outlet>
+<div class="containerfluid">
+    <router-outlet></router-outlet>
 </div>
 
 <!--Overlay panel-->
 <p-overlayPanel #op>
-  <ng-template pTemplate>
-  <ul class="navbar-nav">
-    <li>
-        <a  class="dropdown-item" href="#">Hello</a>
-    </li>
-    <li>
-      <a href="#" class="dropdown-item">Test2</a>
-    </li>
-    <li> 
-      <a  class="dropdown-item" href="#">Test3</a>
-    </li>
-  </ul>
-  </ng-template>
+    <ng-template pTemplate>
+        <ul class="navbar-nav">
+            <li>
+                <a class="dropdown-item" href="#">Hello</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">Test2</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#">Test3</a>
+            </li>
+        </ul>
+    </ng-template>
 </p-overlayPanel>
 
 <script>
-  var header = document.getElementById("w3-bar");
-  var btns = header.getElementsByClassName("w3-btn");
-  for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-  }
-  
-  // function showContent(name){
-  //     console.log(name);
-  //     var header = document.getElementById("w3-content");
-  //     var current = header.getElementsByClassName(" c-show");
-  //     console.log(current);
-  //     if(current.length!=0){
-  //         console.log("in current");
-  //     current[0].className = current[0].className.replace(" c-show", " c-hide");}
-  //     document.getElementById(name).classList.add("c-show")   
-  // }
-  </script>
+    // var header = document.getElementById("w3-bar");
+    // var btns = header.getElementsByClassName("w3-btn");
+    // for (var i = 0; i < btns.length; i++) {
+    //     btns[i].addEventListener("click", function() {
+    //         var current = document.getElementsByClassName("active");
+    //         current[0].className = current[0].className.replace(" active", "");
+    //         this.className += " active";
+    //     });
+    // }
+
+    // function showContent(name){
+    //     console.log(name);
+    //     var header = document.getElementById("w3-content");
+    //     var current = header.getElementsByClassName(" c-show");
+    //     console.log(current);
+    //     if(current.length!=0){
+    //         console.log("in current");
+    //     current[0].className = current[0].className.replace(" c-show", " c-hide");}
+    //     document.getElementById(name).classList.add("c-show")   
+    // }
+</script>
