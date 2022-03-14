@@ -12,6 +12,13 @@ import {TableModule} from 'primeng/table';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
+import {TabMenuModule} from 'primeng/tabmenu';
+import {MultiSelectModule} from 'primeng/multiselect';
+import { FormsModule } from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+import {RadioButtonModule} from 'primeng/radiobutton';
+import {DropdownModule} from 'primeng/dropdown';
 @NgModule({
   declarations: [
     HomepageComponent,
@@ -27,7 +34,14 @@ import {MatIconModule} from '@angular/material/icon';
     TableModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule,
+    TabMenuModule,
+    MultiSelectModule,
+    FormsModule,
+    MatSelectModule,
+    RadioButtonModule,
+    DropdownModule
   ],
   exports: [
     HomepageComponent,
