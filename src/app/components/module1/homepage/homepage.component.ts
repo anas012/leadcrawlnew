@@ -11,14 +11,23 @@ export class HomepageComponent implements OnInit {
   constructor(
     private _router:Router
   ) { }
+  serStyle = 'nsw1';
 
+  submit() {
+    console.log("working")
+    if(this.serStyle === 'nsw1') {
+      this.serStyle = 'nsw';
+      console.log(this.serStyle)
+    } else {
+      this.serStyle = 'nsw1';
+    }
+  }
   ngOnInit(): void {
 this._router.navigate(['/main']);
   }
  showContent(){
   event.preventDefault()
   var header = document.getElementById("w3-bar");
-  console.log(header)
     var btns = header.getElementsByClassName("w3-btn");
     for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function() {

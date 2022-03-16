@@ -122,5 +122,43 @@ a.topnav-icons {
 @media (max-width: 479px) {
     .w3-n {
         display: none!important;
+        height: inherit;
     }
+}
+
+.nsw {
+    display: block;
+}
+
+.nsw1 {
+    display: none !important;
+}
+
+.nav_search_wrapper {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    transition: .1s flex-basis;
+    border: 1px solid #1991eb;
+}
+
+.nav_search_icon {
+    color: #1991eb;
+    margin-left: 6px;
+}
+
+.nav_search {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    border: none;
+    transition: all .1s linear;
+}
+
+.nav_search:focus {
+    outline: none;
 }

@@ -19,7 +19,13 @@
     <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-bell"></i></a>
     <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-question-circle-o"></i></a>
     <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-phone"></i></a>
-    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-search"></i></a>
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1" (click)="submit()"><i class="fa fa-search"></i></a>
+    <div class="w3-right w3-bar-item w3-button px-md-2  px-1" [ngClass]="[serStyle]">
+        <div class="nav_search_wrapper">
+            <i class="fa fa-search nav_search_icon"></i>
+            <input placeholder="Search..." type="text" class="nav_search" autocomplete="" value="">
+        </div>
+    </div>
     <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1">
         <span class="badge badge-pill badge-primary p-1 px-2">Upgrade</span></a>
 
