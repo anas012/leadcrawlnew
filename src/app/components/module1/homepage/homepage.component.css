@@ -1,99 +1,103 @@
 .c-hide {
-  display: none;
+    display: none;
 }
 
 .c-show {
-  display: block;
+    display: block;
 }
 
 .w3-bar {
-  width: 100%;
-  overflow: hidden;
-  background-color: black;
-  color: white;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
+
 
 /* div {
     display: block;
 } */
 
 .topnav a {
-  padding: 10px 15px 9px 15px !important;
+    padding: 10px 15px 9px 15px !important;
 }
 
 a.topnav-icons.fa-menu {
-  font-size: 22px !important;
+    font-size: 22px !important;
 }
 
 .topnav a.topnav-icons {
-  background-color: white;
+    background-color: white;
 }
 
 .w3-bar .w3-bar-item {
-  /* padding: 16px 12px; */
-  float: left;
-  width: auto;
-  border: none;
-  display: block;
+    /* padding: 16px 12px; */
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
 }
 
 a.topnav-icons {
-  /* width: 48px !important; */
-  font-size: 18px !important;
-  padding-top: 11px !important;
-  padding-bottom: 13px !important;
+    /* width: 48px !important; */
+    font-size: 18px !important;
+    padding-top: 11px !important;
+    padding-bottom: 13px !important;
 }
+
 
 /* .w3-left {
     float: left!important;
 } */
 
 .w3-button {
-  border: none;
-  display: inline-block;
-  padding: 8px 16px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .w3-bar .w3-button {
-  white-space: normal;
+    white-space: normal;
 }
 
 .fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 fontawesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+    display: inline-block;
+    font: normal normal normal 14px/1 fontawesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
 }
 
 .fa-menu:before {
-  content: "\f0c9";
+    content: "\f0c9";
 }
 
 .w3-right {
-  float: right !important;
+    float: right !important;
 }
+
 
 /* .w3-bar a.active {
     background-color: #04AA6D!important;
     color: #ffffff;
 } */
+
 
 /* .btn {
     border: none;
@@ -106,19 +110,57 @@ a.topnav-icons {
 
 .active,
 .w3-btn:hover {
-  background-color: #f7f9fb;
-  color: #1991eb;
-  text-decoration: none !important;
+    background-color: #f7f9fb;
+    color: #1991eb;
+    text-decoration: none !important;
 }
 
 @media (min-width: 480px) {
-  .w3-hide-large {
-    display: none !important;
-  }
+    .w3-hide-large {
+        display: none !important;
+    }
 }
 
 @media (max-width: 479px) {
-  .w3-n {
+    .w3-n {
+        display: none !important;
+    }
+}
+
+.nsw1 {
     display: none !important;
-  }
+}
+
+.nav_search_wrapper {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    transition: .1s flex-basis;
+    border: 1px solid #1991eb;
+}
+
+.nav_search_icon {
+    color: #1991eb;
+    margin-left: 6px;
+}
+
+.nav_search {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    border: none;
+    transition: all .1s linear;
+}
+
+.nav_search:focus {
+    outline: none;
+}
+
+.p-tabmenu-nav,
+.p-tabmenuitem {
+    background-color: #f7f9fb !important;
 }
