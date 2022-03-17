@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {DropdownModule} from 'primeng/dropdown';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
 @NgModule({
   declarations: [
     HomepageComponent,
@@ -41,7 +42,8 @@ import {DropdownModule} from 'primeng/dropdown';
     FormsModule,
     MatSelectModule,
     RadioButtonModule,
-    DropdownModule
+    DropdownModule,
+    ScrollPanelModule
   ],
   exports: [
     HomepageComponent,

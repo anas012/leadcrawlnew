@@ -56,6 +56,34 @@ export class MainpageComponent implements OnInit {
       quantity: 12,
       company: 'demo',
     },
+    {
+      code: 12,
+      name: 'demo',
+      category: 'demo category',
+      quantity: 12,
+      company: 'demo',
+    },
+    {
+      code: 12,
+      name: 'demo',
+      category: 'demo category',
+      quantity: 12,
+      company: 'demo',
+    },
+    {
+      code: 12,
+      name: 'demo',
+      category: 'demo category',
+      quantity: 12,
+      company: 'demo',
+    },
+    {
+      code: 12,
+      name: 'demo',
+      category: 'demo category',
+      quantity: 12,
+      company: 'demo',
+    },
   ];
 
   // shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
@@ -103,42 +131,52 @@ export class MainpageComponent implements OnInit {
       {
         Name: 'Name',
         expanded: 'close',
+        disable:false,
       },
       {
         Name: 'Job title',
         expanded: 'close',
+        disable:false,
       },
       {
         Name: 'Company',
         expanded: 'close',
+        disable:false,
       },
       {
         Name: 'Locations',
         expanded: 'close',
+        disable:false,
       },
       {
         Name: 'Employees',
         expanded: 'close',
+        disable:false,
       },
       {
         Name: 'Industry',
         expanded: 'close',
+        disable:false,
       },
       {
         Name: 'Technologies',
         expanded: 'close',
+        disable:true,
       },
       {
         Name: 'Revenue',
         expanded: 'close',
+        disable:true,
       },
       {
         Name: 'Funding',
         expanded: 'close',
+        disable:true,
       },
       {
         Name: 'Job Posting',
         expanded: 'close',
+        disable:true,
       },
     ];
   }
@@ -154,7 +192,10 @@ export class MainpageComponent implements OnInit {
   // {
   //   console.log("hello clicked")
   // }
-
+  isDisabled(e)
+  {
+    console.log(e)
+  }
   checklocation() {
     if (this.selectedlocation == 'Region') {
       this.region = true;

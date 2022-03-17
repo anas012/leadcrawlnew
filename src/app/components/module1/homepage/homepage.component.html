@@ -1,99 +1,55 @@
-<div
-  id="w3-bar"
-  class="w3-bar w3-left align-items-center"
-  style="width: 100%; overflow: hidden; background-color: white; color: black"
->
-  <a
-    href="javascript:void(0);"
-    class="w3-hide-large w3-left w3-bar-item w3-button px-2 py-3"
-    ><i class="fa fa-bars"></i
+<div id="w3-bar" class="w3-bar w3-left align-items-center" style="width: 100%; overflow: hidden; background-color: white; color: black">
+    <a href="javascript:void(0);" class="w3-hide-large w3-left w3-bar-item w3-button px-2 py-3"><i class="fa fa-bars"></i
   ></a>
-  <!-- <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 px-1 pr-3 py-3 " ><i class="fa fa-cog "></i></a> -->
-  <!-- <a class="w3-left w3-bar-item w3-button" href="#" title="Home"><i class = "material-icons">feed</i></a> -->
-  <a
-    href="javascript:void(0);"
-    class="w3-left w3-n w3-bar-item w3-button px-2 py-3"
-  >
-    <img
-      src="../../../../assets/img/demologo.png"
-      style="height: 20px; width: 44px"
-    />
-  </a>
+    <!-- <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 px-1 pr-3 py-3 " ><i class="fa fa-cog "></i></a> -->
+    <!-- <a class="w3-left w3-bar-item w3-button" href="#" title="Home"><i class = "material-icons">feed</i></a> -->
+    <a href="javascript:void(0);" class="w3-left w3-n w3-bar-item w3-button px-2 py-3">
+        <img src="../../../../assets/img/demologo.png" style="height: 20px; width: 44px" />
+    </a>
 
-  <a
-    class="w3-bar-item w3-button w3-btn active px-2 py-3"
-    href="#"
-    (click)="Homecontent()"
-    (click)="showContent()"
-  >
-    <i class="w3-n fa fa-home px-1"></i>Home</a
-  >
-  <a
-    class="w3-bar-item w3-n w3-button w3-btn px-2 py-3"
-    href="#"
-    (click)="Integrationcontent()"
-    (click)="showContent()"
-  >
-    <i class="fa fa-search px-1"></i>Integration</a
-  >
-  <a
-    class="w3-bar-item w3-n w3-button w3-btn px-2 py-3"
-    href="#"
-    (click)="Crmcontent()"
-    (click)="showContent()"
-  >
-    <i class="fa fa-search px-1"></i>CRM</a
-  >
-  <a
-    href="javascript:void(0);"
-    class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"
-    ><i class="fas fa-light fa-bell mr-3"></i
+    <a class="w3-bar-item w3-button w3-btn active px-2 py-3" href="#" (click)="Homecontent()" (click)="showContent()">
+        <i class="w3-n fa fa-home px-1"></i>Home</a>
+    <a class="w3-bar-item w3-n w3-button w3-btn px-2 py-3" href="#" (click)="Integrationcontent()" (click)="showContent()">
+        <i class="fa fa-search px-1"></i>Integration</a>
+    <a class="w3-bar-item w3-n w3-button w3-btn px-2 py-3" href="#" (click)="Crmcontent()" (click)="showContent()">
+        <i class="fa fa-search px-1"></i>CRM</a>
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fas fa-light fa-bell mr-3"></i
   ></a>
-  <a
-    href="javascript:void(0);"
-    class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"
-    ><i class="fa fa-question-circle-o"></i
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-question-circle-o"></i
   ></a>
-  <a
-    href="javascript:void(0);"
-    class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"
-    ><i class="fa fa-phone"></i
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"><i class="fa fa-phone"></i
   ></a>
-  <a
-    href="javascript:void(0);"
-    class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1"
-    ><i class="fa fa-search"></i
-  ></a>
-  <!-- <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1">
+    <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1" (click)="submit()"><i class="fa fa-search"></i></a>
+    <div class="w3-right w3-bar-item w3-button px-md-2  px-1" [ngClass]="[serStyle]">
+        <div class="nav_search_wrapper">
+            <i class="fa fa-search nav_search_icon"></i>
+            <input placeholder="Search..." type="text" class="nav_search" autocomplete="" value="">
+        </div>
+    </div>
+    <!-- <a href="javascript:void(0);" class="w3-right w3-bar-item w3-button px-md-2 py-3 px-1">
  <span class="badge badge-pill badge-primary p-1 px-2">Upgrade</span></a> -->
-  <button
-    pButton
-    pRipple
-    type="button"
-    label="Upgrade"
-    class="p-button-rounded btn-sm mt-2 w3-right"
-  ></button>
+    <button pButton pRipple type="button" label="Upgrade" class="p-button-rounded btn-sm mt-2 w3-right"></button>
 </div>
 
-<!-- <p-tabMenu [model]="items"></p-tabMenu> -->
+<p-tabMenu [model]="items"></p-tabMenu>
 
 <div class="containerfluid">
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </div>
 
 <!--Overlay panel-->
 <p-overlayPanel #op>
-  <ng-template pTemplate>
-    <ul class="navbar-nav">
-      <li>
-        <a class="dropdown-item" href="#">Hello</a>
-      </li>
-      <li>
-        <a href="#" class="dropdown-item">Test2</a>
-      </li>
-      <li>
-        <a class="dropdown-item" href="#">Test3</a>
-      </li>
-    </ul>
-  </ng-template>
+    <ng-template pTemplate>
+        <ul class="navbar-nav">
+            <li>
+                <a class="dropdown-item" href="#">Hello</a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-item">Test2</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#">Test3</a>
+            </li>
+        </ul>
+    </ng-template>
 </p-overlayPanel>
